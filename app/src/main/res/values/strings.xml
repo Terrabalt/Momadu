@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Momadu</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Momadu</string>
+    <string name="nav_header_subtitle">18218035@std.stei.itb.ac.id</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_schedule">Schedule</string>
+    <string name="menu_finance">Finance</string>
+
+    <string name="home_today">Today\'s reminders</string>
+    <string name="home_no_today">Nothing scheduled for today!</string>
+
+    <string name="finance_date">Date</string>
+    <string name="finance_hour">Hour</string>
+    <string name="finance_name">Amount</string>
+</resources>
