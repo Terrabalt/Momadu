@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_schedule"
         android:name="com.sti.ppam.momadu.ui.gallery.GalleryFragment"
         android:label="@string/menu_schedule"
         tools:layout="@layout/fragment_schedule" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
+        android:id="@+id/nav_finance"
         android:name="com.sti.ppam.momadu.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_finance"
         tools:layout="@layout/fragment_finance" />
