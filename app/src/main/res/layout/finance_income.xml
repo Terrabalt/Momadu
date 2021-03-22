@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="204dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="Monday, 22 Maret 2021"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="370dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="148dp"
+        android:autofillHints="currency"
+        android:background="#afafaf"
+        android:ems="10"
+        android:hint="@string/finance_name"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconTextPersonName"
+        android:layout_width="20dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/pen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="347dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Your notes"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/note_name"
+        android:textColor="#C4C4C4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <ScrollView
+        android:id="@+id/financeIncomeCategoryList"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonName">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/ibIncomeCategory1"
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:background="?android:attr/panelBackground"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/deposit" />
+
+                <ImageButton
+                    android:id="@+id/ibIncomeCategory2"
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:background="?android:attr/panelBackground"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/dollar" />
+
+                <ImageButton
+                    android:id="@+id/ibIncomeCategoryAdd"
+                    android:layout_width="80dp"
+                    android:layout_height="64dp"
+                    android:background="?android:attr/panelBackground"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_add" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/finance_income_category_1"
+                    android:textAlignment="center"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/finance_income_category_2"
+                    android:textAlignment="center"
+                    android:textSize="17sp" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

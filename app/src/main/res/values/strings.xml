@@ -20,5 +20,13 @@
     <string name="finance_date">Date</string>
     <string name="finance_hour">Hour</string>
     <string name="finance_name">Amount</string>
+    <string name="finance_expense_category_1">Bills</string>
+    <string name="finance_expense_category_2">Transportation</string>
+    <string name="finance_expense_category_3">Clothes</string>
+    <string name="finance_expense_category_4">Calls</string>
+    <string name="finance_expense_category_5">Groceries</string>
+    <string name="finance_expense_category_6">Eating Out</string>
+    <string name="finance_income_category_1">Deposits</string>
+    <string name="finance_income_category_2">Salary</string>
     <string name="note_name">Your Note</string>
 </resources>
