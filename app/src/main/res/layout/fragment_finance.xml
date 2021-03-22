@@ -6,45 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
-    <ImageView
-        android:id="@+id/imageView18"
-        android:layout_width="70dp"
-        android:layout_height="50dp"
-        android:src="@drawable/phone"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="469dp" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="80dp"
-        android:layout_height="64dp"
-        android:src="@drawable/grocery"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="465dp" />
-
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:gravity="center_horizontal"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="205dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="205dp"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/splashBG"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:background="@drawable/bottom_nav_bar"
@@ -55,162 +27,278 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
+        android:id="@+id/financeCategory5"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory2" />
+
+    <ImageView
+        android:id="@+id/financeCategory6"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:src="@drawable/grocery"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory3" />
+
+    <TextView
+        android:id="@+id/financePercentCategory1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/financeCategory1"
+        app:layout_constraintStart_toStartOf="@+id/financeCategory1"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory1" />
+
+    <TextView
+        android:id="@+id/financePercentCategory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/financeCategory2"
+        app:layout_constraintStart_toStartOf="@+id/financeCategory2"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory2" />
+
+    <TextView
+        android:id="@+id/financePercentCategory3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60%"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/financeCategory3"
+        app:layout_constraintStart_toStartOf="@+id/financeCategory3"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory3" />
+
+    <TextView
+        android:id="@+id/financePercentCategory4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/financeCategory4"
+        app:layout_constraintStart_toStartOf="@+id/financeCategory4"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory4" />
+
+    <TextView
+        android:id="@+id/financePercentCategory5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/financeCategory5"
+        app:layout_constraintStart_toStartOf="@+id/financeCategory5"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory5" />
+
+    <TextView
+        android:id="@+id/financePercentCategory6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/financeCategory6"
+        app:layout_constraintStart_toStartOf="@+id/financeCategory6"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory6" />
+
+    <ImageButton
         android:id="@+id/imageView4"
         android:layout_width="84dp"
         android:layout_height="73dp"
         android:src="@drawable/add"
-        tools:layout_editor_absoluteX="250dp"
-        tools:layout_editor_absoluteY="642dp" />
+        android:scaleType="fitCenter"
+        android:background="?android:attr/panelBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/splashBG" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView5"
         android:layout_width="84dp"
         android:layout_height="73dp"
         android:src="@drawable/minus"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="642dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="204dp"
-        android:layout_height="28dp"
-        android:text="Monday, 22 Maret 2021"
-        android:textSize="45px"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="41dp" />
+        android:scaleType="fitCenter"
+        android:background="?android:attr/panelBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/splashBG"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/splashBG" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="381dp"
         android:layout_height="193dp"
+        android:layout_marginTop="25dp"
         android:src="@drawable/recatngle"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="103dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dateView3" />
+
+    <TextView
+        android:id="@+id/dateView3"
+        android:layout_width="204dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="Monday, 22 Maret 2021"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:text="Balance"
         android:textColor="#C4C4C4"
-        android:textSize="50px"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="115dp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:text="Rp 50,000"
         android:textColor="#FFFFFF"
-        android:textSize="80px"
-        tools:layout_editor_absoluteX="239dp"
-        tools:layout_editor_absoluteY="115dp" />
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:text="Rp100,000"
         android:textColor="#FFFFFF"
-        android:textSize="60px"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="189dp" />
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
         android:text="Income"
         android:textColor="#C4C4C4"
-        android:textSize="45px"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="166dp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
         android:text="Expense"
         android:textColor="#C4C4C4"
-        android:textSize="45px"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="231dp" />
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
         android:text="Rp50,000"
         android:textColor="#FFFFFF"
-        android:textSize="60px"
-        tools:layout_editor_absoluteX="35dp"
-        tools:layout_editor_absoluteY="255dp" />
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/financeCategory1"
         android:layout_width="80dp"
         android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/bill"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="333dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/financeCategory2"
         android:layout_width="80dp"
         android:layout_height="64dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/car"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="333dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/financeCategory3"
         android:layout_width="80dp"
         android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
         android:src="@drawable/clothing"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="333dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/financeCategory4"
         android:layout_width="80dp"
         android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="72dp"
         android:src="@drawable/cutlery"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="462dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="60%"
-        android:textSize="50px"
-        tools:layout_editor_absoluteX="319dp"
-        tools:layout_editor_absoluteY="397dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="40%"
-        android:textSize="50px"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="526dp" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:src="@drawable/right_arrow"
-        tools:layout_editor_absoluteX="300dp"
-        tools:layout_editor_absoluteY="45dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/financeCategory1" />
 
     <ImageView
         android:id="@+id/imageView15"
         android:layout_width="15dp"
         android:layout_height="15dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:src="@drawable/left_arrow"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="45dp" />
+        app:layout_constraintEnd_toStartOf="@+id/dateView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/right_arrow"
+        app:layout_constraintStart_toEndOf="@+id/dateView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
