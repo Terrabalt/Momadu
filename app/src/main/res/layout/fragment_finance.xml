@@ -6,75 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/phone"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/grocery"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="465dp" />
+
     <TextView
         android:id="@+id/text_slideshow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:gravity="center_horizontal"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="189dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="20dp"
-        android:autofillHints="date"
-        android:ems="10"
-        android:hint="@string/finance_date"
-        android:inputType="date"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="@null"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:autofillHints="currency"
-        android:ems="10"
-        android:hint="@string/finance_name"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toStartOf="@+id/button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextTime"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:autofillHints="time"
-        android:ems="10"
-        android:hint="@string/finance_hour"
-        android:inputType="time"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/editTextDate"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
@@ -82,5 +42,175 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_begin="205dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bottom_nav_bar"
+        android:contentDescription="@android:string/untitled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="84dp"
+        android:layout_height="73dp"
+        android:src="@drawable/add"
+        tools:layout_editor_absoluteX="250dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="84dp"
+        android:layout_height="73dp"
+        android:src="@drawable/minus"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="642dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="204dp"
+        android:layout_height="28dp"
+        android:text="Monday, 22 Maret 2021"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="381dp"
+        android:layout_height="193dp"
+        android:src="@drawable/recatngle"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance"
+        android:textColor="#C4C4C4"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp 50,000"
+        android:textColor="#FFFFFF"
+        android:textSize="80px"
+        tools:layout_editor_absoluteX="239dp"
+        tools:layout_editor_absoluteY="115dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp100,000"
+        android:textColor="#FFFFFF"
+        android:textSize="60px"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:textColor="#C4C4C4"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expense"
+        android:textColor="#C4C4C4"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rp50,000"
+        android:textColor="#FFFFFF"
+        android:textSize="60px"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/bill"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/car"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/clothing"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/cutlery"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="462dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60%"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40%"
+        android:textSize="50px"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="526dp" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/right_arrow"
+        tools:layout_editor_absoluteX="300dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/left_arrow"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="45dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

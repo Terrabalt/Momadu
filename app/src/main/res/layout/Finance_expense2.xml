@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@android:drawable/ic_menu_add"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="515dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/bill"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/car"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/clothing"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/cutlery"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="369dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="148dp"
+        android:autofillHints="currency"
+        android:ems="10"
+        android:hint="70,000"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="204dp"
+        android:layout_height="28dp"
+        android:text="Monday, 22 Maret 2021"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clothes"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="304dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eating Out"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calls"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="191dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Groceries"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="450dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bills"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transportation"
+        android:textSize="45px"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="321dp" />
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/phone"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="390dp" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="80dp"
+        android:layout_height="64dp"
+        android:src="@drawable/grocery"
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

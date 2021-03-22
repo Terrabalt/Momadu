@@ -20,4 +20,5 @@
     <string name="finance_date">Date</string>
     <string name="finance_hour">Hour</string>
     <string name="finance_name">Amount</string>
+    <string name="note_name">Your Note</string>
 </resources>
