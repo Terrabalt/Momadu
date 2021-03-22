@@ -32,6 +32,7 @@ class ScheduleFragment : Fragment() {
         btnAddSchedule.setOnClickListener{
             val schedule = Schedule("Test", cvSchedule.date, cvSchedule.date)
             scheduleListAdapter.addSchedule(schedule)
+            ivNoSchedule.visibility = View.INVISIBLE
         }
     }
 
