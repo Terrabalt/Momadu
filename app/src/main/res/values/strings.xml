@@ -29,4 +29,6 @@
     <string name="finance_income_category_1">Deposits</string>
     <string name="finance_income_category_2">Salary</string>
     <string name="note_name">Your Note</string>
+    <string name="finance_income_name">Add Income</string>
+    <string name="finance_expense_name">Add Expense</string>
 </resources>

@@ -2,20 +2,22 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.slideshow.SlideshowFragment">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/dateView2"
         android:layout_width="204dp"
         android:layout_height="28dp"
-        android:layout_marginTop="50dp"
-        android:textAlignment="center"
+        android:layout_marginTop="16dp"
         android:gravity="center_horizontal"
         android:text="Monday, 22 Maret 2021"
+        android:textAlignment="center"
         android:textSize="17sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,13 +25,14 @@
         android:id="@+id/editTextNumberDecimal"
         android:layout_width="370dp"
         android:layout_height="48dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="56dp"
         android:autofillHints="currency"
         android:background="#afafaf"
         android:ems="10"
         android:hint="@string/finance_name"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,7 +60,8 @@
         android:text="@string/note_name"
         android:textColor="#C4C4C4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal"
+        android:importantForAutofill="no" />
 
     <ScrollView
         android:id="@+id/financeExpenseCategoryList"

@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/nav_finance"
-        android:name="com.sti.ppam.momadu.ui.slideshow.SlideshowFragment"
+        android:name="com.sti.ppam.momadu.ui.slideshow.FinanceFragment"
         android:label="@string/menu_finance"
         tools:layout="@layout/fragment_finance" />
 </navigation>
