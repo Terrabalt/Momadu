@@ -5,10 +5,25 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ImageButton
+        android:id="@+id/btnAddExpense"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="32dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@android:string/ok"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/dateView2"
+        android:id="@+id/dvExpense"
         android:layout_width="204dp"
         android:layout_height="28dp"
         android:layout_marginTop="16dp"
@@ -22,7 +37,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
+        android:id="@+id/txtExpenseAmount"
         android:layout_width="370dp"
         android:layout_height="48dp"
         android:layout_marginTop="56dp"
@@ -37,7 +52,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iconTextPersonName"
+        android:id="@+id/icExpenseNotes"
         android:layout_width="20dp"
         android:layout_height="33dp"
         android:layout_marginStart="20dp"
@@ -45,23 +60,26 @@
         android:layout_marginTop="32dp"
         android:src="@drawable/pen"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@id/txtExpenseAmount" />
 
     <EditText
-        android:id="@+id/editTextPersonName"
-        android:layout_width="347dp"
+        android:id="@+id/txtExpenseNotes"
+        android:layout_width="0dp"
         android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Your notes"
         android:ems="10"
+        android:hint="@string/finance_expense_notes"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="@string/note_name"
         android:textColor="#C4C4C4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal"
-        android:importantForAutofill="no" />
+        app:layout_constraintStart_toEndOf="@+id/icExpenseNotes"
+        app:layout_constraintTop_toBottomOf="@id/txtExpenseAmount" />
 
     <ScrollView
         android:id="@+id/financeExpenseCategoryList"
@@ -71,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPersonName">
+        app:layout_constraintTop_toBottomOf="@id/txtExpenseNotes">
 
         <TableLayout
             android:gravity="center_horizontal"

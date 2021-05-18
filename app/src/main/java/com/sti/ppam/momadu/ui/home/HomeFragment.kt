@@ -1,6 +1,7 @@
 package com.sti.ppam.momadu.ui.home
 
 import android.os.Bundle
+import android.text.format.DateFormat
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,10 +10,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.sti.ppam.momadu.R
+import java.time.LocalDate
+import java.util.*
 
 class HomeFragment : Fragment() {
-
-    private lateinit var homeViewModel: HomeViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
@@ -33,5 +34,15 @@ class HomeFragment : Fragment() {
          */
 
         return inflater.inflate(R.layout.fragment_home, container, false)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        activity?.title = DateFormat.getLongDateFormat(context).format(Date())
+    }
+
+    override fun onResume() {
+        super.onResume()
+        activity?.title = DateFormat.getLongDateFormat(context).format(Date())
     }
 }

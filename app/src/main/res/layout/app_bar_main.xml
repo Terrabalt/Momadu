@@ -15,8 +15,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Momadu.PopupOverlay" />
+            android:background="?attr/colorOnPrimary"/>
+            <!--app:popupTheme="@style/Theme.Momadu.PopupOverlay"-->
 
     </com.google.android.material.appbar.AppBarLayout>
 

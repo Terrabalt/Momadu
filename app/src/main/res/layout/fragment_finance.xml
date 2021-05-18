@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg"
     tools:context=".ui.slideshow.FinanceFragment">
 
     <androidx.constraintlayout.widget.Guideline
@@ -13,17 +14,6 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintGuide_begin="205dp"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/splashBG"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:background="@drawable/bottom_nav_bar"
-        android:contentDescription="@android:string/untitled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -111,47 +101,32 @@
         android:id="@+id/buttonIncome"
         android:layout_width="84dp"
         android:layout_height="73dp"
-        android:src="@drawable/add"
-        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp"
         android:background="?android:attr/panelBackground"
+        android:scaleType="fitCenter"
+        android:src="@drawable/add"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toTopOf="@+id/splashBG" />
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <ImageButton
         android:id="@+id/buttonExpense"
         android:layout_width="84dp"
         android:layout_height="73dp"
-        android:src="@drawable/minus"
-        android:scaleType="fitCenter"
+        android:layout_marginBottom="16dp"
         android:background="?android:attr/panelBackground"
-        app:layout_constraintBottom_toBottomOf="@+id/splashBG"
+        android:scaleType="fitCenter"
+        android:src="@drawable/minus"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/splashBG" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/financeOverviewBackground"
-        android:layout_width="381dp"
+        android:layout_width="0dp"
         android:layout_height="193dp"
-        android:layout_marginTop="25dp"
         android:src="@drawable/recatngle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateView3" />
-
-    <TextView
-        android:id="@+id/dateView3"
-        android:layout_width="204dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="16dp"
-        android:gravity="center_horizontal"
-        android:text="Monday, 22 Maret 2021"
-        android:textAlignment="center"
-        android:textSize="17sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -182,18 +157,6 @@
         app:layout_constraintTop_toTopOf="@+id/financeOverviewBackground" />
 
     <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:text="Rp100,000"
-        android:textColor="#FFFFFF"
-        android:textSize="22sp"
-        app:layout_constraintStart_toStartOf="@+id/financeOverviewBackground"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -205,6 +168,18 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/financeOverviewBackground"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Rp100,000"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/financeOverviewBackground"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView7"
@@ -273,28 +248,6 @@
         android:src="@drawable/cutlery"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/financeCategory1" />
-
-    <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginRight="12dp"
-        android:src="@drawable/left_arrow"
-        app:layout_constraintEnd_toStartOf="@+id/dateView3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginLeft="12dp"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/right_arrow"
-        app:layout_constraintStart_toEndOf="@+id/dateView3"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"

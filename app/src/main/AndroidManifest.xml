@@ -30,6 +30,10 @@
             android:name=".ui.slideshow.FinanceIncome"
             android:label="@string/finance_income_name"
             android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ui.gallery.ScheduleAddActivity"
+            android:label="Add Schedule"
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>

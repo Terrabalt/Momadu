@@ -17,4 +17,7 @@ class FinanceExpense : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.finance_expense)
     }
+    fun onClick(view: View) {
+        finish();
+    }
 }

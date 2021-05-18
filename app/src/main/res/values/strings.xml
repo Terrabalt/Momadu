@@ -17,6 +17,7 @@
     <string name="home_today">Today\'s reminders</string>
     <string name="home_no_today">Nothing scheduled for today!</string>
 
+    <string name="button_save_data">SAVE</string>
     <string name="finance_date">Date</string>
     <string name="finance_hour">Hour</string>
     <string name="finance_name">Amount</string>
@@ -26,8 +27,10 @@
     <string name="finance_expense_category_4">Calls</string>
     <string name="finance_expense_category_5">Groceries</string>
     <string name="finance_expense_category_6">Eating Out</string>
+    <string name="finance_expense_notes">Your Note</string>
     <string name="finance_income_category_1">Deposits</string>
     <string name="finance_income_category_2">Salary</string>
+    <string name="finance_income_notes">Your Note</string>
     <string name="note_name">Your Note</string>
     <string name="finance_income_name">Add Income</string>
     <string name="finance_expense_name">Add Expense</string>

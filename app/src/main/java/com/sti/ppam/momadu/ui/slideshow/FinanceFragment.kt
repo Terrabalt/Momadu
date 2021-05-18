@@ -16,9 +16,7 @@ class FinanceFragment : Fragment() {
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        val root = inflater.inflate(R.layout.fragment_finance, container, false)
-
-        return root
+        return inflater.inflate(R.layout.fragment_finance, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

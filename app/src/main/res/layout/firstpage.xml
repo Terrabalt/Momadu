@@ -15,27 +15,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/yes" />
+        android:background="@drawable/yes" />
 
     <ImageView
         android:id="@+id/splashLogo"
         android:layout_width="331dp"
         android:layout_height="313dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="257dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_new" />
+        app:layout_constraintVertical_bias="0.3"
+        android:background="@drawable/logo_new" />
 
     <TextView
         android:id="@+id/splashText"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:text="M O M A D U"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/nav_header_title"
         android:textSize="58sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/splashLogo" />

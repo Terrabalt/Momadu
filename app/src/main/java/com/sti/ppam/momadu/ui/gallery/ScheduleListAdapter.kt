@@ -6,15 +6,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.sti.ppam.momadu.R
 import kotlinx.android.synthetic.main.item_schedule.view.*
+import java.text.SimpleDateFormat
 import java.util.*
 
 class ScheduleListAdapter (
-    private val schedules: MutableList<Schedule>
+    private val schedules: MutableList<Schedule>, var emptyView: View
 ) : RecyclerView.Adapter<ScheduleListAdapter.ScheduleViewHolder>() {
 
     class ScheduleViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ScheduleViewHolder {
+        emptyView.visibility = View.VISIBLE
         return ScheduleViewHolder(
             LayoutInflater.from(parent.context).inflate(
                 R.layout.item_schedule,
@@ -25,8 +27,20 @@ class ScheduleListAdapter (
     }
 
     fun addSchedule(schedule: Schedule) {
+        emptyView.visibility = View.INVISIBLE
         schedules.add(schedule)
         notifyItemChanged(schedules.size - 1)
+    }
+
+    fun addSchedules(schedule: List<Schedule>) {
+        emptyView.visibility = View.INVISIBLE
+        schedules.addAll(schedule)
+        notifyItemChanged(schedules.size - 1)
+    }
+    fun clearSchedules() {
+        emptyView.visibility = View.VISIBLE
+        schedules.clear()
+        notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: ScheduleViewHolder, position: Int) {
@@ -35,10 +49,8 @@ class ScheduleListAdapter (
         scheduleStart.timeInMillis = curSchedule.startDate
         val scheduleEnd = Calendar.getInstance()
         scheduleEnd.timeInMillis = curSchedule.endDate
-        val scheduleLength = scheduleStart.get(Calendar.HOUR_OF_DAY).toString() +
-                ':' + scheduleStart.get(Calendar.MINUTE).toString() + " - " +
-                scheduleEnd.get(Calendar.HOUR_OF_DAY).toString() +
-                ':' + scheduleEnd.get(Calendar.MINUTE).toString()
+        val scheduleLength = SimpleDateFormat("HH:mm", Locale.getDefault()).format(scheduleStart.time) + " - " +
+                SimpleDateFormat("HH:mm", Locale.getDefault()).format(scheduleEnd.time)
         holder.itemView.apply{
             tvScheduleTitle.text = curSchedule.name
             tvScheduleDate.text = scheduleLength

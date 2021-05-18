@@ -5,10 +5,25 @@
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <ImageButton
+        android:id="@+id/btnAddIncome"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="32dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@android:string/ok"
+        android:onClick="onClick"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/ic_menu_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/dateView"
+        android:id="@+id/dvIncome"
         android:layout_width="204dp"
         android:layout_height="28dp"
         android:layout_marginTop="16dp"
@@ -22,10 +37,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="370dp"
+        android:id="@+id/txtIncomeAmount"
+        android:layout_width="0dp"
         android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:autofillHints="currency"
         android:background="#afafaf"
         android:ems="10"
@@ -38,7 +57,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iconTextPersonName"
+        android:id="@+id/icIncomeNotes"
         android:layout_width="20dp"
         android:layout_height="33dp"
         android:layout_marginStart="20dp"
@@ -46,23 +65,26 @@
         android:layout_marginTop="32dp"
         android:src="@drawable/pen"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal" />
+        app:layout_constraintTop_toBottomOf="@id/txtIncomeAmount" />
 
     <EditText
-        android:id="@+id/editTextPersonName"
-        android:layout_width="347dp"
+        android:id="@+id/txtIncomeNotes"
+        android:layout_width="0dp"
         android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Your notes"
         android:ems="10"
+        android:hint="@string/finance_expense_notes"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="@string/note_name"
         android:textColor="#C4C4C4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberDecimal"
-        android:importantForAutofill="no" />
+        app:layout_constraintStart_toEndOf="@+id/icIncomeNotes"
+        app:layout_constraintTop_toBottomOf="@id/txtIncomeAmount" />
 
     <ScrollView
         android:id="@+id/financeIncomeCategoryList"
@@ -72,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextPersonName">
+        app:layout_constraintTop_toBottomOf="@id/txtIncomeNotes">
 
         <TableLayout
             android:layout_width="wrap_content"
@@ -89,6 +111,7 @@
                     android:layout_width="80dp"
                     android:layout_height="64dp"
                     android:background="?android:attr/panelBackground"
+                    android:contentDescription="@string/finance_income_category_1"
                     android:scaleType="fitCenter"
                     android:src="@drawable/deposit" />
 
@@ -97,6 +120,7 @@
                     android:layout_width="80dp"
                     android:layout_height="64dp"
                     android:background="?android:attr/panelBackground"
+                    android:contentDescription="@string/finance_income_category_2"
                     android:scaleType="fitCenter"
                     android:src="@drawable/dollar" />
 
